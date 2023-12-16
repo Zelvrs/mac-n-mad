@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	height: 100vh;
+	background-color: #f7d707;
 }
 
 * {
@@ -54,6 +54,7 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 	background-color: #ffa732;
 	flex-direction: column;
 	background-size: 10%;
@@ -62,9 +63,11 @@ main {
 	background-repeat: repeat;
 	background-position: center;
 
-	min-height: 650px;
+	min-height: 750px;
 	width: 100%;
 }
+
+
 
 .about img {
 	background-color: rgba(247, 215, 7, 1);
@@ -83,13 +86,12 @@ main {
 }
 
 .history {
-	background-color: #f7d707;
 	height: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	gap: 10em;
-	padding: 5em;
+	padding: 1em 5em ;
 	flex-wrap: wrap;
 	color: #f9f9e0;
 	align-items: center;
@@ -129,11 +131,25 @@ main {
 	header .nav {
 		position: absolute;
 		top: 100%;
-		right: -1000%;
-		background-color: #fff;
-		width: 30rem;
+		right: -100%;
+		background-color: #ffff;
+		width: 15rem;
 		height: 100vh;
 		z-index: 99999999;
+		align-items: left;
+		font-size: 1.2rem;
+		display: flex;
+		transition: 0.5s right;
+		flex-direction: column;
+		gap: 1em;
+	}
+	
+	header .nav.active{
+		right: 0;
+
+	}
+	.nav a{
+		display: block;
 	}
 
 	#hamburger-menu {
@@ -152,7 +168,6 @@ main {
 
 	.history-1:nth-child(2) h3 {
 		order: 1;
-		border: 1px solid red;
 	}
 
 	.history{
