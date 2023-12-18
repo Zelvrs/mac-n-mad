@@ -2,8 +2,32 @@
 	text-decoration: none;
 	/* color: #f9f9e0; */
 	box-sizing: border-box;
-	
 	/* overflow: hidden; */
 	font-family: "Noto Sans KR", sans-serif;
 	color: #F9E8D9;
+}
+
+body.preload *{
+	animation-play-state: paused;
+	animation-duration: 0s;
+	transition: all 0s;
+	-webkit-animation-duration: 0s;
+
+}
+
+.hidden{
+	opacity: 0;
+	transition: all 1.5s;
+}
+
+.show{
+	opacity: 1;
+	transform: translateX(-20px);
+}
+
+
+@media (max-width: 569px){
+	.show{
+		transform: translateY(-50px);
+	}
 }

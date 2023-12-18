@@ -1,0 +1,181 @@
+body {
+	margin: 0;
+	background-image: url("../img/bglast.png");
+	background-size: 5%;
+	background-color: #ffeb3b;
+	text-align: center;
+}
+
+* {
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: "Noto Sans KR";
+	color: #333333;
+	box-sizing: border-box;
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgba(241, 235, 144, 0.82);
+	position: fixed;
+	box-sizing: border-box;
+	border-bottom: 1px solid black;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+
+.judul h1 {
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	font-size: 2.5rem;
+}
+
+.nav a {
+	margin: 1em;
+	font-weight: bold;
+	color: #333333;
+}
+
+main {
+	width: 100%;
+	background-color: rgba(255, 167, 50, 0.7);
+
+	padding: 4em;
+}
+
+main h2 {
+	text-align: center;
+	padding: 0px 100px 0px 100px;
+	font-size: 1.6em;
+}
+
+.menu {
+	display: flex;
+	gap: 10px;
+	height: auto;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.menu1 {
+	height: auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.menu2 {
+	height: auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.menu3 {
+	height: auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.menu4 {
+	height: auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.kata {
+	font-size: 1.4rem;
+	width: 100%;
+	padding: 2em;
+	text-align: center;
+}
+
+footer {
+	background-color: rgb(255, 167, 50);
+	padding: 5em;
+	display: flex;
+	justify-content: space-around;
+	height: auto;
+	flex-wrap: wrap;
+	/* align-items: center; */
+}
+
+footer .email {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	justify-content: center;
+	align-items: center;
+}
+
+.email p,
+.email textarea {
+	text-shadow: none;
+	color: #474b4f;
+}
+
+.email textarea {
+	width: 100%;
+	resize: none;
+}
+
+.social-media p,
+.kontak p,
+.social-media p a,
+.kontak p a,
+.address p,
+.email p {
+	text-shadow: none;
+	color: #474b4f;
+}
+img {
+	width: 100%;
+	border-radius: 50px;
+}
+
+.email p,
+.social-media p:first-child,
+.kontak p:first-child,
+.address p:first-child,
+.email p {
+	font-weight: 900;
+}
+
+.email button {
+	width: 50%;
+}
+
+@media (max-width: 569px) {
+	.menu1{
+		width: 100%;
+	}
+	.menu2{
+		width: 100%;
+	}
+	.menu3{
+		width: 100%;
+	}
+	.menu4{
+		width: 100%;
+	}
+	main{
+		padding: 1em;
+		padding-top: 4em;
+	}
+	body {
+		background-size: 20%;
+	}
+	img {
+		width: 60%;
+		border-radius: 50px;
+	}
+
+	/* .menu{
+		flex-direction: column;
+	} */
+}

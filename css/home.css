@@ -5,21 +5,15 @@ body {
 	/* background-image: url(../img/makaroni-banyak.jpg);
 	background-blend-mode: overlay;
 	background-size: fill; */
-	background-image: url('../img/bglast.png');
-    background-size: 5%;
-    background-color: #ffeb3b;
+	background-image: url("../img/bglast.png");
+	background-size: 5%;
+	background-color: #ffeb3b;
 }
-
-
-
-
 
 main {
 	width: 100%;
 	position: relative;
 }
-
-
 
 .about {
 	padding: 0em 0em;
@@ -29,7 +23,7 @@ main {
 	margin-top: 0;
 	align-items: center;
 	position: relative;
-	background-color: #ffa732;
+	background-color: rgba(255, 167, 50, 0.7);
 	flex-direction: column;
 	background-size: 10%;
 	background-blend-mode: color-dodge;
@@ -86,6 +80,11 @@ main {
 	border-radius: 20px;
 	order: 0;
 	box-shadow: 0px 0px 35px 10px rgba(0, 0, 0, 0.3);
+	transition: 0.5s transform;
+}
+
+.history-1 img:hover{
+	transform: translateY(-20px);
 }
 
 .history-1 h3 {
@@ -93,6 +92,7 @@ main {
 	font-family: "Montserrat", sans-serif;
 	background-color: #fff56293;
 	padding: 1em;
+	border: 1px solid #333333;
 	color: #333333;
 	text-shadow: none;
 	border-radius: 1em;
@@ -103,17 +103,15 @@ main {
 	min-height: 400px;
 	width: 100%;
 	background-color: #ffe382;
+	border-top: 1px solid #333333;
 	color: #f9f9e0;
 	text-align: center;
 	padding: 5em;
 	display: flex;
 	justify-content: space-around;
-
 }
 
-
-
-.promo{
+.promo {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -121,14 +119,14 @@ main {
 	justify-content: center;
 }
 
-.promo button{
+.promo button {
 	font-size: 1.7rem;
-	background: #EE7214;
+	background: #ee7214;
 	border: none;
 	border-radius: 40px;
-	padding: 0.5em 1em ;
+	padding: 0.5em 1em;
 	text-shadow: none;
-	color: #F9E8D9;
+	color: #f9e8d9;
 	font-weight: 400;
 	cursor: pointer;
 }
@@ -142,8 +140,6 @@ main {
 	/* text-shadow: none; */
 }
 
-
-
 .menu img {
 	width: 100%;
 	object-position: center;
@@ -152,17 +148,18 @@ main {
 	object-fit: cover;
 }
 
-
-
 /* -responsive section */
 
 @media (max-width: 569px) {
+	body {
+		background-size: 20%;
+	}
 
-	main{
+	main {
 		margin-top: 0;
 	}
 
-	header .nav {
+	/* header .nav {
 		position: absolute;
 		top: 100%;
 		right: -100%;
@@ -188,7 +185,7 @@ main {
 	#hamburger-menu {
 		display: block;
 		color: black;
-	}
+	} */
 
 	.about {
 		/* margin-top: 2em; */
@@ -224,33 +221,28 @@ main {
 		font-size: 1em;
 	}
 
-	
-
-	.buy-now{
+	.buy-now {
 		flex-direction: column;
 		padding: 2em;
 	}
 
-	.promo p{
+	.promo p {
 		font-size: 1rem;
 		width: 100%;
 	}
 
-	.promo button{
+	.promo button {
 		font-size: 1rem;
 	}
 
-	.promo{
+	.promo {
 		order: 2;
-
 	}
 
-	.menu img{
+	.menu img {
 		width: 100%;
 		height: auto;
 	}
-
-	
 }
 
 @media (max-width: 827px) and (min-width: 569px) {
@@ -258,7 +250,7 @@ main {
 		background-size: auto;
 		/* background-repeat: repeat; */
 	}
-	.menu img{
+	.menu img {
 		width: 50%;
 	}
 }
