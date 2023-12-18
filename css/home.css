@@ -2,9 +2,12 @@ body {
 	margin: 0;
 	background-color: #554c0f;
 	/* background-color: #f7d707; */
-	background-image: url(../img/makaroni-banyak.jpg);
+	/* background-image: url(../img/makaroni-banyak.jpg);
 	background-blend-mode: overlay;
-	background-size: fill;
+	background-size: fill; */
+	background-image: url('../img/bglast.png');
+    background-size: 5%;
+    background-color: #ffeb3b;
 }
 
 
@@ -49,9 +52,10 @@ main {
 
 .about p {
 	width: 70%;
-	color: white;
-	font-size: 1.6em;
-	font-weight: bolder;
+	color: #333333;
+	text-shadow: none;
+	font-size: 2em;
+	font-weight: 900;
 }
 
 .history {
@@ -87,8 +91,10 @@ main {
 .history-1 h3 {
 	width: 100%;
 	font-family: "Montserrat", sans-serif;
-	background-color: #f1eb90ab;
+	background-color: #fff56293;
 	padding: 1em;
+	color: #333333;
+	text-shadow: none;
 	border-radius: 1em;
 	font-size: 1.5em;
 }
@@ -104,6 +110,8 @@ main {
 	justify-content: space-around;
 
 }
+
+
 
 .promo{
 	display: flex;
@@ -129,6 +137,8 @@ main {
 	font-weight: 800;
 	width: 70%;
 	font-size: 2rem;
+	color: #333333;
+	text-shadow: none;
 	/* text-shadow: none; */
 }
 
@@ -142,58 +152,7 @@ main {
 	object-fit: cover;
 }
 
-footer {
-	background-color: #ffa732;
-	padding: 5em;
-	display: flex;
-	justify-content: space-around;
-	height: auto;
-	flex-wrap: wrap;
-	/* align-items: center; */
-}
 
-footer .email{
-	color: #F9E8D9;
-	display: flex;
-	flex-direction: column;
-	gap: 1em;
-	justify-content: center;
-	align-items: center;
-}
-
-.email p , .email textarea{
-	text-shadow: none;
-	color: #474b4f;
-
-}
-
-.email textarea{
-	width: 100%;
-	resize: none;
-}
-
-.social-media p, .kontak p, .social-media p a, .kontak p a, .address p, .email p{
-	text-shadow: none;
-	color: #474b4f;
-
-}
-
-.email p, .social-media p:first-child, .kontak p:first-child, .address p:first-child, .email p{
-	font-weight: 900;
-}
-
-.email button{
-	width: 50%;
-	color: #F9E8D9;
-	
-}
-
-.copyright{
-	height: auto;
-	background-color: #9b0005;
-	padding: 0.5em;
-	text-align: center;
-}
 
 /* -responsive section */
 
@@ -291,14 +250,7 @@ footer .email{
 		height: auto;
 	}
 
-	footer{
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	footer .email{
-		align-self: center;
-	}
+	
 }
 
 @media (max-width: 827px) and (min-width: 569px) {

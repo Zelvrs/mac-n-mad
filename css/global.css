@@ -2,8 +2,8 @@
 	text-decoration: none;
 	/* color: #f9f9e0; */
 	box-sizing: border-box;
-	text-shadow: -1px -1px 0 rgb(25, 13, 13), 1px -1px 0 rgb(35, 32, 32), -1px 1px 0 rgb(23, 18, 18), 1px 1px 0 rgb(25, 22, 22);
+	
 	/* overflow: hidden; */
-	font-family: "Noto Sans KR";
+	font-family: "Noto Sans KR", sans-serif;
 	color: #F9E8D9;
 }
