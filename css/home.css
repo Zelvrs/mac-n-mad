@@ -7,50 +7,9 @@ body {
 	background-size: fill;
 }
 
-* {
-	text-decoration: none;
-	/* color: #f9f9e0; */
-	box-sizing: border-box;
-	text-shadow: -1px -1px 0 rgb(25, 13, 13), 1px -1px 0 rgb(35, 32, 32), -1px 1px 0 rgb(23, 18, 18), 1px 1px 0 rgb(25, 22, 22);
-	/* overflow: hidden; */
-	font-family: "Noto Sans KR";
-	color: #F9E8D9;
-}
 
-header {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background-color: rgba(241, 235, 144, 0.82);
-	position: fixed;
 
-	box-sizing: border-box;
-	border-bottom: 1px solid black;
-	padding: 0em;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 99;
-}
 
-/* -font judul dan nav */
-.judul h2,
-.nav a {
-	color: #f9f9e0;
-}
-
-.nav a {
-	margin: 0 1em;
-	font-weight: bold;
-}
-
-.judul h2 {
-	font-weight: bold 700;
-}
-
-#hamburger-menu {
-	display: none;
-}
 
 main {
 	width: 100%;
@@ -64,6 +23,7 @@ main {
 	text-align: center;
 	display: flex;
 	justify-content: center;
+	margin-top: 0;
 	align-items: center;
 	position: relative;
 	background-color: #ffa732;
@@ -238,6 +198,11 @@ footer .email{
 /* -responsive section */
 
 @media (max-width: 569px) {
+
+	main{
+		margin-top: 0;
+	}
+
 	header .nav {
 		position: absolute;
 		top: 100%;
@@ -267,12 +232,13 @@ footer .email{
 	}
 
 	.about {
-		margin-top: 2em;
+		/* margin-top: 2em; */
 		min-height: 520px;
 		justify-content: start;
 	}
 	.about img {
 		width: 70%;
+		margin-top: 6em;
 	}
 
 	.history-1:nth-child(2) h3 {
