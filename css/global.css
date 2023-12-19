@@ -11,6 +11,7 @@ body.preload *{
 	animation-play-state: paused;
 	animation-duration: 0s;
 	transition: all 0s;
+	transition: opacity 0.8s;
 	-webkit-animation-duration: 0s;
 
 }
